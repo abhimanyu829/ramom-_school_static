@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --erp-bg: #1e2125;
+    --erp-sidebar: #22252a;
+    --erp-card: #272a2f;
+    --erp-card-hover: #2d3137;
+    --erp-border: #363a42;
+    --erp-input-bg: #1e2126;
+    --erp-accent: #ff5252;
+    --erp-accent-hover: #e04545;
+    --erp-text-muted: #8d94a0;
+    --erp-text-main: #dce0e6;
+    --erp-text-heading: #ffffff;
+  }
+
+  body {
+    background-color: var(--erp-bg);
+    color: var(--erp-text-main);
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+}
+
+/* Custom delicate dark scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #1b1d22;
+}
+::-webkit-scrollbar-thumb {
+  background: #383c44;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #505662;
+}
+
+/* Print layout for invoice */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .erp-invoice-container {
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 !important;
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "ABHIBHIDEVELOPERS School Management ERP",
+  "description": "Multi-page showcase of the ABHIBHIDEVELOPERS School Management ERP system including Admissions, Student Accounting, Academics, Office Accounts, Web Installer, and Portal Login.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
